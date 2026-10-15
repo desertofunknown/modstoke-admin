@@ -1,0 +1,127 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net6.0;net10.0;net11.0</TargetFrameworks>
+    <OutputType>Library</OutputType>
+    <AssemblyName>OpenACAIAdminTool</AssemblyName>
+    <RootNamespace>OpenACAIAdminTool</RootNamespace>
+    <Title>Modstoke Admin</Title>
+    <AssemblyTitle>Modstoke Admin</AssemblyTitle>
+    <Product>Modstoke Admin</Product>
+    <Authors>OpenACAI</Authors>
+    <Company>OpenACAI</Company>
+    <Description>Modstoke Admin by OpenACAI. Independent host administration for Sons of the Forest.</Description>
+    <ImplicitUsings>false</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <NoWarn>1701;1702</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="OpenACAIAdminTool.cs" />
+    <Compile Include="AdminCore.Overview.cs" />
+    <Compile Include="AdminCore.Roster.cs" />
+    <Compile Include="AdminCore.PlayerHistory.cs" />
+    <Compile Include="AdminCore.Configuration.cs" />
+    <Compile Include="AdminCore.SettingsValues.cs" />
+    <Compile Include="AdminCore.Presence.cs" />
+    <Compile Include="AdminCore.RosterSessions.cs" />
+    <Compile Include="AdminCore.ConnectionCache.cs" />
+    <Compile Include="AdminCore.Loader.cs" />
+    <Compile Include="AdminCore.ServerRequests.cs" />
+    <Compile Include="AdminCore.ServerSessions.cs" />
+    <Compile Include="AdminCore.ServerInventory.cs" />
+    <Compile Include="AdminCore.ServerModeration.cs" />
+    <Compile Include="AdminCore.TargetCommand.cs" />
+    <Compile Include="AdminCore.ServerUnban.cs" />
+    <Compile Include="AdminCore.ConnectionObservation.cs" />
+    <Compile Include="AdminCore.ConnectionView.cs" />
+    <Compile Include="AdminCore.Notices.cs" />
+    <Compile Include="AdminCore.BridgeText.cs" />
+    <Compile Include="AdminCore.LearnedPolicyText.cs" />
+    <Compile Include="AdminCore.Teleport.cs" />
+    <Compile Include="AdminCore.ServerRelocation.cs" />
+    <Compile Include="AdminCore.ServerChat.cs" />
+    <Compile Include="AdminCore.InventoryAuditRead.cs" />
+    <Compile Include="AdminCore.InventoryAuditProtocol.cs" />
+    <Compile Include="AdminCore.InventoryAuditClient.cs" />
+    <Compile Include="AdminCore.InventoryAuditTransport.cs" />
+    <Compile Include="AdminCore.ServerPlayerHits.cs" />
+    <Compile Include="AdminCore.ServerStructureHits.cs" />
+    <Compile Include="AdminCore.StructureHitValidation.cs" />
+    <Compile Include="AdminCore.ServerBlueprints.cs" />
+    <Compile Include="AdminCore.ConstructionRequestText.cs" />
+    <Compile Include="AdminCore.ServerStructureRelocation.cs" />
+    <Compile Include="AdminCore.ServerConstructionResources.cs" />
+    <Compile Include="AdminCore.ItemEventPolicy.cs" />
+    <Compile Include="AdminCore.ServerStorage.cs" />
+    <Compile Include="AdminCore.ServerVailHits.cs" />
+    <Compile Include="AdminCore.ServerDismemberHits.cs" />
+    <Compile Include="AdminCore.ServerWorldObjects.cs" />
+    <Compile Include="AdminCore.ServerReadiness.cs" />
+    <Compile Include="AdminCore.Moderation.cs" />
+    <Compile Include="AdminCore.ModerationState.cs" />
+    <Compile Include="AdminCore.Jail.cs" />
+    <Compile Include="AdminCore.JailRelease.cs" />
+    <Compile Include="AdminCore.JailReleaseView.cs" />
+    <Compile Include="AdminCore.JailCare.cs" />
+    <Compile Include="AdminCore.Evidence.cs" />
+    <Compile Include="AdminCore.EvidenceView.cs" />
+    <Compile Include="AdminCore.Inventory.cs" />
+    <Compile Include="AdminCore.DebugCommands.cs" />
+    <Compile Include="AdminCore.WorldDebug.cs" />
+    <Compile Include="AdminCore.WorldCommandArguments.cs" />
+    <Compile Include="AdminCore.LocalDebug.cs" />
+    <Compile Include="AdminCore.Saving.cs" />
+    <Compile Include="AdminCore.SaveActivity.cs" />
+    <Compile Include="AdminCore.SaveView.cs" />
+    <Compile Include="AdminCore.Companions.cs" />
+    <Compile Include="PossessionController.cs" />
+    <Compile Include="AdminCore.Construction.cs" />
+    <Compile Include="AdminCore.Environment.cs" />
+    <Compile Include="AdminCore.ServerEnvironment.cs" />
+    <Compile Include="AdminCore.ServerEnvironmentView.cs" />
+    <Compile Include="AdminCore.ServerSleep.cs" />
+    <Compile Include="AdminCore.ServerSleepView.cs" />
+    <Compile Include="AdminCore.ServerAdmission.cs" />
+    <Compile Include="AdminCore.ServerAdmissionView.cs" />
+    <Compile Include="AdminCore.WorldView.cs" />
+    <Compile Include="AdminCore.WorldLocators.cs" />
+    <Compile Include="AdminCore.WorldLocatorView.cs" />
+    <Compile Include="AdminCore.ItemCatalog.cs" />
+    <Compile Include="AdminCore.ItemBrowser.cs" />
+    <Compile Include="AdminCore.VisualDebug.cs" />
+    <Compile Include="AdminCore.VisualView.cs" />
+    <Compile Include="AdminCore.Prefabs.cs" />
+    <Compile Include="AdminCore.VehicleGuard.cs" />
+    <Compile Include="AdminCore.MovementContext.cs" />
+    <Compile Include="AdminCore.MovementTransitions.cs" />
+    <Compile Include="AdminCore.MovementSampling.cs" />
+    <Compile Include="AdminCore.TransportState.cs" />
+    <Compile Include="AdminCore.EventData.cs" />
+    <Compile Include="AdminCore.EventValidation.cs" />
+    <Compile Include="AdminCore.RangeValidationSource.cs" />
+    <Compile Include="AdminCore.EventHooks.cs" />
+    <Compile Include="AdminCore.EquipmentState.cs" />
+    <Compile Include="AdminCore.EquipmentAudit.cs" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net11.0'">
+    <Reference Include="OpenACAI.Endnight.Loader.Core" HintPath="..\..\OpenACAI\Runtime\OpenACAI.Endnight.Loader.Core.dll" Private="false" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="BepInEx.Core" HintPath="..\..\BepInEx\core\BepInEx.Core.dll" Private="false" />
+    <Reference Include="BepInEx.Unity.IL2CPP" HintPath="..\..\BepInEx\core\BepInEx.Unity.IL2CPP.dll" Private="false" />
+    <Reference Include="Il2CppInterop.Runtime" HintPath="..\..\BepInEx\core\Il2CppInterop.Runtime.dll" Private="false" />
+    <Reference Include="Il2Cppmscorlib" HintPath="..\..\BepInEx\interop\Il2Cppmscorlib.dll" Private="false" />
+    <Reference Include="0Harmony" HintPath="..\..\BepInEx\core\0Harmony.dll" Private="false" />
+    <Reference Include="UnityEngine.CoreModule" HintPath="..\..\BepInEx\interop\UnityEngine.CoreModule.dll" Private="false" />
+    <Reference Include="UnityEngine.IMGUIModule" HintPath="..\..\BepInEx\interop\UnityEngine.IMGUIModule.dll" Private="false" />
+    <Reference Include="UnityEngine.InputLegacyModule" HintPath="..\..\BepInEx\interop\UnityEngine.InputLegacyModule.dll" Private="false" />
+    <Reference Include="UnityEngine.TextRenderingModule" HintPath="..\..\BepInEx\interop\UnityEngine.TextRenderingModule.dll" Private="false" />
+    <Reference Include="UnityEngine.UIModule" HintPath="..\..\BepInEx\interop\UnityEngine.UIModule.dll" Private="false" />
+    <Reference Include="com.rlabrecque.steamworks.net" HintPath="..\..\BepInEx\interop\com.rlabrecque.steamworks.net.dll" Private="false" />
+  </ItemGroup>
+</Project>

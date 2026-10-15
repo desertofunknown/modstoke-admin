@@ -1,0 +1,23 @@
+# Build and local SDK state
+bin/
+obj/
+.dotnet/
+.vs/
+*.user
+*.suo
+
+# Local assistant work, captures, and diagnostics
+ui-captures/
+*.log
+*.pdb
+*.dll
+*.deps.json
+
+# Live Admin state and player data
+settings.ini
+player-history.tsv
+movement-telemetry.csv
+review-command-inbox.txt
+review-command-results.jsonl
+review-automation-state.json
+review-automation-memory.jsonl

@@ -1,6 +1,6 @@
 # Building and installing Modstoke Admin
 
-This repository currently contains documentation only; the Admin source import is pending. These instructions apply to an existing, prepared local source tree containing `OpenACAIAdminToolBepInEx.csproj`, its C# files, and `global.json`. They do not make this docs-only repository buildable, and they do not require Modstoke Manager or a downloaded Admin release.
+This source tree contains `OpenACAIAdminToolBepInEx.csproj`, its C# files, and `global.json`. The instructions require a local game and Loader installation; they do not require Modstoke Manager or a downloaded Admin release.
 
 ## Prerequisites
 
@@ -54,5 +54,4 @@ Admin stores `settings.ini` and `player-history.tsv` in `<GameRoot>\BepInEx\plug
 
 ## What the build confirms
 
-At the latest local source snapshot, `Plugin.Version` is `0.5.108`. The project's build record says the .NET 11 RC2 Release build succeeded with no warnings or errors, and the resulting DLL/PDB were installed and hash-verified. That build was not launched for runtime testing. Full UI and multiplayer acceptance remain pending. Compile and installation checks alone do not verify that BepInEx loaded the plugin, that Loader services registered, or that a host action took effect.
-
+In this source snapshot, `Plugin.Version` is `0.5.111`. An isolated .NET 11 RC2 Release build of the staged source succeeded with no warnings or errors against copies of the installed dependency DLLs. This snapshot has not been installed or launched in-game. Full UI and multiplayer acceptance remain pending. Compilation alone does not verify that BepInEx loads the plugin, that Loader services register, or that a host action takes effect.
