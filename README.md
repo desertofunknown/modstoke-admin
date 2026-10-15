@@ -24,3 +24,7 @@ The product name is Modstoke Admin, but the assembly remains `OpenACAIAdminTool.
 
 Modstoke Admin is an independent Sons of the Forest mod. It is not affiliated with or endorsed by Endnight Games.
 
+## License status
+
+A project source license has not been selected or published yet. Third-party Loader and BepInEx components keep their own terms and attribution when the Admin source is prepared for publication.
+
