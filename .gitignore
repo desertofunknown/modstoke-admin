@@ -1,0 +1,24 @@
+# Build and local SDK state
+bin/
+obj/
+.dotnet/
+.vs/
+*.user
+*.suo
+
+# Local assistant work, captures, and diagnostics
+.codex/
+ui-captures/
+*.log
+*.pdb
+*.dll
+*.deps.json
+
+# Live Admin state and player data
+settings.ini
+player-history.tsv
+movement-telemetry.csv
+codex-command-inbox.txt
+codex-command-results.jsonl
+codex-automation-state.json
+codex-automation-memory.jsonl

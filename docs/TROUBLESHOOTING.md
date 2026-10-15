@@ -1,6 +1,6 @@
 # Troubleshooting Modstoke Admin
 
-Start by separating a build failure from a game load or host authority problem. This repository contains documentation only while source import is pending. The [build guide](BUILDING.md) shows the layout for a prepared local source tree and the manual install path.
+Start by separating a build failure from a game load or host authority problem. The [build guide](BUILDING.md) shows the required source layout and manual install path.
 
 ## `dotnet` cannot find the required SDK
 
@@ -25,4 +25,3 @@ Treat a queued request or send result as a request, not proof of delivery or a w
 ## Settings or player history behave unexpectedly
 
 The compatibility directory is `<GameRoot>\BepInEx\plugins\OpenACAIAdminTool`. Confirm that the game can write there and check the console's settings status. Keep your existing `settings.ini` and `player-history.tsv` when updating the DLL. These files, runtime logs, and telemetry can contain player information; review and redact them before sharing a report.
-
